@@ -96,7 +96,7 @@ SELECT rn AS min_rows_for_60pct
 FROM r
 WHERE running_total >= 0.60 * grand_total
 ORDER BY rn
-LIMIT 1;
+LIMIT 10;
 
 
 --- check the outliner FOE --
