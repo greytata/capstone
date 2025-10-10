@@ -21,6 +21,11 @@ FROM raw.student_enrolments_2024 r
 LEFT JOIN dim.foe d ON r.unit_primary_foe_code = d.foe_code
 WHERE d.foe_code IS NULL;
 
+SELECT r.*
+FROM raw.student_enrolments_2024 r
+LEFT JOIN dim.foe d ON r.unit_primary_foe_code = d.foe_code
+WHERE d.foe_code IS NULL;
+
 --checking the missing special case with total eftsl --
 SELECT 
     COUNT(*) AS n_rows,
