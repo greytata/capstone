@@ -1,4 +1,4 @@
-## 📘 Project Overview  
+## Project Overview  
 
 This project investigates inconsistencies between **UWA’s internal Commonwealth Supported Place (CSP)** student enrolment records and the **Australian Government’s official funding allocations**.  
 Using three official datasets —  
@@ -13,7 +13,7 @@ Our findings reveal that the **root cause of discrepancies** lies in **different
 - Government allocations are calculated at the **Funding Cluster × Field of Education (FOE)** level.  
 
 ---
-## 🏗️ Project Structure  
+## Project Structure  
 
 ```
 ├── data/
@@ -41,9 +41,9 @@ Our findings reveal that the **root cause of discrepancies** lies in **different
 
 ---
 
-## 🧩 Methodology  
+## Methodology  
 
-### 1️⃣ ETL & Data Warehouse Design  
+### 1.ETL & Data Warehouse Design  
 
 - Imported and standardised three data sources into PostgreSQL.  
 - Built one **fact table (`fact_enrolment_2024`)** and multiple **dimension tables (`dim_foe`, `dim_cluster`, `dim_fees`)**.  
