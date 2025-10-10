@@ -13,4 +13,31 @@ Our findings reveal that the **root cause of discrepancies** lies in **different
 - Government allocations are calculated at the **Funding Cluster × Field of Education (FOE)** level.  
 
 ---
+## 🏗️ Project Structure  
+
+```
+├── data/
+│   ├── student_enrolments_2024.csv
+│   ├── csp_allocation_2024.xlsx
+│   ├── 2024_indexed_rates.pdf
+│   └── funding_agreement_2024.pdf
+│
+├── sql/
+│   ├── create_schema.sql
+│   ├── dim_tables.sql
+│   ├── fact_enrolment_insert.sql
+│   ├── quality_checks.sql
+│   └── aggregation_queries.sql
+│
+├── tableau/
+│   ├── CSP_Reconciliation_Dashboard.twbx
+│
+├── model/
+│   ├── logistic_regression_simulation.ipynb
+│   ├── simulated_data.csv
+│
+└── README.md
+```
+
+---
 
