@@ -134,3 +134,13 @@ A lightweight **reconciliation prototype** was designed using mock UI to demonst
 This can be implemented in Excel, Power BI, or a web-based internal audit tool.  
 
 ---
+
+
+## 5. Limitations  
+
+1. **Limited Data Coverage:** Only 2024 data available; no international or self-funded students included.  
+2. **Missing Special Cases:** No details on *grandfathered students* or *special FOE codes* (366 unmapped).  
+3. **Simulated Model Data:** Logistic regression used synthetic data; results are demonstrative only.  
+4. **No Student ID Field:** Prevents direct validation of duplication or per-student aggregation.
+ 
+
