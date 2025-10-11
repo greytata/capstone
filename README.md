@@ -107,3 +107,30 @@ Since actual payments were not provided, a simulated dataset was used.
 
 This model provides a **proof-of-concept** for future predictive audit and reconciliation systems.  
 
+### 4. Final Solution  
+
+#### (A) Data-Level Solution – Rebuild Comparable Aggregation Logic  
+Problem:  
+UWA data recorded by unit/course; Government calculates by *Funding Cluster × FOE*.  
+
+Solution:  
+- Re-aggregate existing *student enrolment* + *allocation* data into a **Funding Cluster × FOE summary table**  
+- Output annual reconciliation reference table:  
+
+| Cluster | FOE | Total_EFTSL | UWA_Internal_$ | Gov_Indexed_$ | Δ ($) | Δ (%) |
+|----------|-----|--------------|----------------|----------------|-------|-------|
+| 1 | 090701 | 120.25 | 1,234,500 | 1,210,000 | +24,500 | 2.0% |
+
+Deliverables:  
+- Reproducible SQL/Excel/Power BI report  
+- Annual finance audit template for UWA  
+
+#### (B) Prototype Dashboard (Governance Layer)  
+A lightweight **reconciliation prototype** was designed using mock UI to demonstrate:  
+- Upload of student data + government rate tables  
+- Auto-calculation of variance by FOE / Cluster  
+- Export of reconciliation summary report  
+
+This can be implemented in Excel, Power BI, or a web-based internal audit tool.  
+
+---
