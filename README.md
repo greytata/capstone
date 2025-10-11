@@ -62,3 +62,24 @@ JOIN raw.csp_allocation_2024 ca
   ON se.unit_primary_foe_code = ca.foe_code
 GROUP BY 1, 2;
 ```
+
+###  EDA & Insights  
+
+**Objective:** Detect anomalies and patterns in CSP enrolments and government funding allocation.  
+
+**Findings:**  
+- **EFTSL Distribution:** Most students have EFTSL ≤ 1; outliers (EFTSL > 3) likely caused by unit-level duplication.  
+- **Discipline Pattern:** Medicine and Health units dominate total funding (>30%), consistent with federal rates.  
+- **Aggregate Check:** UWA total Commonwealth contribution ≈ **$161.9M** vs. Government official **$147.2M**,  
+  explained by:  
+  - Missing FOE mapping (366 records)  
+  - No *grandfathered students* data  
+  - Absence of student-level identifiers (possible aggregation bias)  
+
+**Visualization (Tableau):**  
+- Bar chart: Total funding by Funding Cluster  
+- Pie chart: Proportion of government vs. student contributions  
+- Highlight table: FOE vs. Δ (%) funding variance  
+
+---
+
