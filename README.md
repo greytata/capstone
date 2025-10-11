@@ -83,3 +83,27 @@ GROUP BY 1, 2;
 
 ---
 
+### 3️⃣ Modelling (Logistic Regression)  
+
+**Goal:**  
+Demonstrate how machine learning can identify funding discrepancy risks once full data is available.  
+
+**Method:**  
+A logistic regression model was built with an `error_flag` variable triggered when the payment difference between *expected* and *actual* funding exceeded **10%**.  
+Since actual payments were not provided, a simulated dataset was used.  
+
+**Performance Summary:**  
+| Metric | Value |
+|---------|--------|
+| Accuracy | 0.87 |
+| Precision | 0.95 |
+| Recall | 0.70 |
+| F1-score | 0.81 |
+
+**Top predictors:**  (for example)
+- **Unit Type:** Psychology and Medicine most prone to large discrepancies.  
+- **Government Contribution Rate:** Slight positive correlation with error likelihood.  
+- **EFTSL:** Larger units more likely to deviate.  
+
+This model provides a **proof-of-concept** for future predictive audit and reconciliation systems.  
+
