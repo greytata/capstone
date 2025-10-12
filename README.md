@@ -142,5 +142,13 @@ This can be implemented in Excel, Power BI, or a web-based internal audit tool.
 2. **Missing Special Cases:** No details on *grandfathered students* or *special FOE codes* (366 unmapped).  
 3. **Simulated Model Data:** Logistic regression used synthetic data; results are demonstrative only.  
 4. **No Student ID Field:** Prevents direct validation of duplication or per-student aggregation.
+
+## 6. Future Work  
+
+- Integrate real student-level payment data for full discrepancy modelling.  
+- Automate reconciliation in an annual ETL pipeline.  
+- Extend dashboard prototype with predictive anomaly detection.  
+- Improve FOE–Cluster mapping accuracy through external metadata.  
+
  
 
