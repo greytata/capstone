@@ -148,7 +148,12 @@ This can be implemented in Excel, Power BI, or a web-based internal audit tool.
 - Integrate real student-level payment data for full discrepancy modelling.  
 - Automate reconciliation in an annual ETL pipeline.  
 - Extend dashboard prototype with predictive anomaly detection.  
-- Improve FOE–Cluster mapping accuracy through external metadata.  
+- Improve FOE–Cluster mapping accuracy through external metadata.
+-  
+##  Key Takeaways  
 
+- **Main finding:** Misalignment in data granularity (unit-level vs. cluster-level) explains funding mismatch.  
+- **Main contribution:** Delivered a **repeatable, auditable reconciliation process** using only three datasets.  
+- **Impact:** Supports UWA’s goals of **financial integrity**, **data transparency**, and **AI governance alignment**.  
  
 
